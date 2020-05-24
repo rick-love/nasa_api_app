@@ -11,6 +11,10 @@
 # production
 /build
 
+#DevelopmentSteps
+DevelopmentSteps.txt
+
+
 # misc
 .DS_Store
 .env.local
