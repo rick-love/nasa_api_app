@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ImageItem = ({image: { data, links }, href }) => {
-  console.log(data);
+  
   return (
 
       <div className='card text-center'>
@@ -12,10 +12,10 @@ const ImageItem = ({image: { data, links }, href }) => {
           style={{ width: '150px' }}
         />
         <h3>{data[0].title}</h3>
-        <p>{data[0].description}</p>
+        <p>{data[0].location}</p>
 
         <div>
-          <a href={href} className='btn btn-primary'>Link</a>
+          <a href={links[0].href} className='btn btn-primary'>Link</a>
         </div>
       </div>
     );
